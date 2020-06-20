@@ -6,6 +6,7 @@ using GraphQL;
 using GraphQL.Types;
 using GraphQL.Validation;
 using Microsoft.AspNetCore.Mvc;
+using GraphQL.NewtonsoftJson;
 
 namespace Aptacode.CSharp.GraphQL.Controllers
 {

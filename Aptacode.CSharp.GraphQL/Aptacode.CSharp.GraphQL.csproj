@@ -10,16 +10,17 @@
     <Description>Aptacode GraphQL utillity library</Description>
     <PackageLicenseExpression>AGPL-3.0-or-later</PackageLicenseExpression>
     <Copyright>AGPL-3.0-or-later</Copyright>
-    <Version>1.0.0.1</Version>
-    <FileVersion>1.0.0.1</FileVersion>
-    <AssemblyVersion>1.0.0.1</AssemblyVersion>
+    <Version>1.0.0.2</Version>
+    <FileVersion>1.0.0.2</FileVersion>
+    <AssemblyVersion>1.0.0.2</AssemblyVersion>
     <Product>Aptacode.CSharp.GraphQL</Product>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="GraphQL" Version="2.4.0" />
-    <PackageReference Include="GraphQL.Authorization" Version="2.1.29" />
-    <PackageReference Include="GraphQL.Server.Transports.AspNetCore" Version="3.4.0" />
+    <PackageReference Include="GraphQL" Version="3.0.0-preview-1648" />
+    <PackageReference Include="GraphQL.Authorization" Version="3.0.40-preview-40" />
+    <PackageReference Include="GraphQL.NewtonsoftJson" Version="3.0.0-preview-1648" />
+    <PackageReference Include="GraphQL.Server.Transports.AspNetCore" Version="3.5.0-alpha0046" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />

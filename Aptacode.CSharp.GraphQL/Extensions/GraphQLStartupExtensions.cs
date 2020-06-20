@@ -21,7 +21,6 @@ namespace Aptacode.CSharp.GraphQL.Extensions
 
             services.AddScoped<TSchema>();
 
-            services.AddScoped<IDependencyResolver>(s => new FuncDependencyResolver(s.GetRequiredService));
             services.AddGraphQL(o =>
                 {
 #if (DEBUG)
@@ -29,7 +28,7 @@ namespace Aptacode.CSharp.GraphQL.Extensions
                     o.EnableMetrics = true;
 #endif
                 }).AddGraphTypes(ServiceLifetime.Scoped)
-                .AddUserContextBuilder(httpContext => httpContext.User)
+                .AddUserContextBuilder((u) => new GraphQLUserContext(){ User = u.User})
                 .AddDataLoader();
         }
 
